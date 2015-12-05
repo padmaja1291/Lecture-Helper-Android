@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addCourse_name"
+        android:hint="Course name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start and end time: "/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TimePicker
+            android:id="@+id/addCourse_timePickerStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TimePicker>
+
+
+        <TimePicker
+            android:id="@+id/addCourse_timePickerEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TimePicker>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Days of week: "/>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/addCourse_daysOfWeek">
+
+    </ListView>
+
+
+</LinearLayout>

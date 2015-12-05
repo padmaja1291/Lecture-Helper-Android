@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.iupui.smartDevice.lecturehelper.ui.DisplayCourse">
+
+    <item
+        android:id="@+id/DisplayCourse_menu_edit_course"
+        android:orderInCategory="100"
+        android:title="Edit Course"/>
+
+    <item
+        android:id="@+id/DisplayCourse_menu_delete_course"
+        android:orderInCategory="100"
+        android:title="Delete Course"/>
+
+</menu>

@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginy"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginx"
+            android:text="Current Course: "
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/main_tv_current_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginx"
+            android:text="ERROR"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginy"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/main_btn_addPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginxxx"
+            android:background="@mipmap/circle_bg"
+            android:onClick="addPhoto"
+            android:text="@string/photo"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/main_btn_addVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginxxx"
+            android:background="@mipmap/circle_bg"
+            android:onClick="addVideo"
+            android:text="@string/video"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/main_btn_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginyy"
+        android:onClick="goToScheduleActivity"
+        android:background="@mipmap/circle_bg"
+        android:text="My Schedule"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:padding="@dimen/marginx" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginyy"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/main_btn_addAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginxxx"
+            android:background="@mipmap/circle_bg"
+            android:onClick="addAudio"
+            android:text="Audio"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/main_btn_addNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginxxx"
+            android:background="@mipmap/circle_bg"
+            android:onClick="addNote"
+            android:text="Add Note"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iupui.smartDevice.lecturehelper.ui.AddNoteActivity">
+
+    <EditText
+        android:id = "@+id/addNote_text"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="6"
+        android:gravity="top|left"
+        android:maxLines="10"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:scrollbars="vertical"
+        android:hint="Add Note"
+    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:id="@+id/addNote_btn_save"
+        android:layout_marginBottom="54dp"
+        android:onClick="saveNote"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

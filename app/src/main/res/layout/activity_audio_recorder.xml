@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iupui.smartDevice.lecturehelper.ui.AudioRecorder">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record"
+        android:layout_marginRight="@dimen/marginxxx"
+        android:textColor="@drawable/custom_button_text"
+        android:background="@drawable/custom_button"
+        android:id="@+id/audio_button1"
+        android:onClick="buttonClicked" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:layout_marginLeft="@dimen/marginxxx"
+        android:id="@+id/audio_button2"
+        android:textColor="@drawable/custom_button_text"
+        android:background="@drawable/custom_button"
+        android:onClick="buttonClicked" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:id="@+id/audio_button3"
+        android:layout_marginRight="@dimen/marginxxx"
+        android:textColor="@drawable/custom_button_text"
+        android:background="@drawable/custom_button"
+        android:onClick="buttonClicked" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Playing"
+        android:id="@+id/audio_button4"
+        android:layout_marginLeft="@dimen/marginxxx"
+        android:textColor="@drawable/custom_button_text"
+        android:background="@drawable/custom_button"
+        android:onClick="buttonClicked" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginyy"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="@drawable/custom_button"
+        android:textColor="@drawable/custom_button_text"
+        android:id="@+id/audio_button5"
+        android:onClick="buttonClicked" />
+    </LinearLayout>
+
+</LinearLayout>

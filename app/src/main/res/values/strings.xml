@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lecture Helper</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_schedule">Schedule</string>
+    <string name="title_activity_display_course">DisplayCourse</string>
+    <string name="title_activity_audio_recorder">AudioRecorder</string>
+    <string name="title_activity_add_note">AddNoteActivity</string>
+    <string name="photo">Photo</string>
+    <string name="video">Video</string>
+</resources>

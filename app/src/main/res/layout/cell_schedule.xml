@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <TextView
+      android:id="@+id/schedule_tv_label"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/heightyyy"
+      android:background="@color/white"
+      android:drawableLeft="@mipmap/schedule"
+      android:paddingLeft="@dimen/marginxx"
+      android:gravity="center_vertical"
+      android:drawablePadding="@dimen/marginx"
+      />
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/one_dp"
+      android:background="@color/gray_light"></View>
+</LinearLayout>

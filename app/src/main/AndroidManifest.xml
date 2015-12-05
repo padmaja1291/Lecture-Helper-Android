@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iupui.smartDevice.lecturehelper" >
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+          /*app requires camera to use */
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.iupui.smartDevice.lecturehelper.ui.LectureApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.iupui.smartDevice.lecturehelper.ui.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.iupui.smartDevice.lecturehelper.ui.ScheduleActivity"
+            android:label="@string/title_activity_schedule"
+            android:parentActivityName="com.iupui.smartDevice.lecturehelper.ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iupui.smartDevice.lecturehelper.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.iupui.smartDevice.lecturehelper.ui.DisplayCourse"
+            android:label="@string/title_activity_display_course"
+            android:parentActivityName="com.iupui.smartDevice.lecturehelper.ui.ScheduleActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iupui.smartDevice.lecturehelper.ui.ScheduleActivity" />
+        </activity>
+        <activity
+            android:name="com.iupui.smartDevice.lecturehelper.ui.AudioRecorder"
+            android:label="@string/title_activity_audio_recorder"
+            android:parentActivityName="com.iupui.smartDevice.lecturehelper.ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iupui.smartDevice.lecturehelper.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.iupui.smartDevice.lecturehelper.ui.AddNoteActivity"
+            android:label="@string/title_activity_add_note"
+            android:parentActivityName="com.iupui.smartDevice.lecturehelper.ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iupui.smartDevice.lecturehelper.ui.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
