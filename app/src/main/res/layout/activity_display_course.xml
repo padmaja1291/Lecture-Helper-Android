@@ -24,6 +24,8 @@
           android:layout_height="wrap_content"
           android:id="@+id/DisplayCourse_editText_course_name"
           android:imeOptions="actionDone"
+          android:maxLines="1"
+          android:inputType="text"
           android:hint="course name"/>
 
 
