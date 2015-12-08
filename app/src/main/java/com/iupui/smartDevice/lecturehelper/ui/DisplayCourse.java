@@ -215,7 +215,7 @@ public class DisplayCourse extends AppCompatActivity {
                         course_name.getText().toString(),
                         days_of_week, LectureHelperUtils.getInString(start_hour)+":"+LectureHelperUtils.getInString(start_minute),
                           LectureHelperUtils.getInString(end_hour)+":"+LectureHelperUtils.getInString(end_minute))){
-                    Toast.makeText(getApplicationContext(), "Updated", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Course is updated", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(),ScheduleActivity.class);
                     startActivity(intent);
                 }
@@ -227,7 +227,7 @@ public class DisplayCourse extends AppCompatActivity {
                 if (mydb.InsertCourse(
                         course_name.getText().toString(),
                         days_of_week, LectureHelperUtils.getInString(start_hour)+":"+LectureHelperUtils.getInString(start_minute), LectureHelperUtils.getInString(end_hour)+":"+LectureHelperUtils.getInString(end_minute))){
-                    Toast.makeText(getApplicationContext(), "Inserted", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Course is added", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(),ScheduleActivity.class);
                     startActivity(intent);
                 }

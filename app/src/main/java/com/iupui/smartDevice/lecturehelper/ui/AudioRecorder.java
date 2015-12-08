@@ -142,9 +142,9 @@ public class AudioRecorder extends AppCompatActivity implements MediaPlayer.OnCo
 
                 if (LectureHelperUtils.copyToStorage(new File(outputFile),
                     mLectureApplication.getCurrentCourseName(), THREE_GPP)) {
-                    Toast.makeText(getApplicationContext(), "Audio has been saved", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Audio is saved!", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Audio has not been saved", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Audio is not saved!", Toast.LENGTH_SHORT).show();
                 }
 
                 break;

@@ -49,7 +49,7 @@ public class AddNoteActivity extends AppCompatActivity {
             buf.newLine();
             buf.close();
             note.setText("");
-            Toast.makeText(this, "Note saved", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Notes is saved!", Toast.LENGTH_LONG).show();
         } catch (IOException e) {
             Toast.makeText(this, "Exception: " + e.toString(), Toast.LENGTH_LONG).show();
         }

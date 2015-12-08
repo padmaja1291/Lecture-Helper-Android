@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
             if (videoFile != null) {
                 takeVideoIntent.putExtra(MediaStore.EXTRA_OUTPUT,
                         Uri.fromFile(videoFile));
-                startActivityForResult(takeVideoIntent, REQUEST_TAKE_PHOTO);
+                startActivityForResult(takeVideoIntent, REQUEST_TAKE_VIDEO);
             }
         }
     }
